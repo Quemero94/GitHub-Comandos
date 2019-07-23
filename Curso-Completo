@@ -1,0 +1,33 @@
+Fuente: https://www.youtube.com/watch?v=j8CSUPIB8mA&list=PLvimn1Ins-43-1sXQmGZPWLjNjPyGNi0R
+Descarga: https://git-scm.com/
+
+* Importantes
+- No importantes
+
+
+1) Primer Repositorio y Commit.
+
+    a) Este paso se realiza por unica vez en cada pc en la que se quiera utilizar
+        *  git config -- global user.email "email"      //Para configurar email del usuario
+        *  git config -- global user.name "nombre"      //Para configurar nombre del usuario
+        -  git config --global -l       //Para saber que usuario estas usando
+
+
+    b)Inicializar Repositorio
+        *   git init
+        *   git status      //Para saber el estado de los archivos
+        *   git add .       //Tener control de los archivos
+        *   git commit -m "Comentario"      //Confirma los archivos
+        -   git diff        //Ver diferencias si cambiaste un archivo
+        -   git checkout .      //Regresa al ultimo commit
+        -   git log         //muestra toda la lista de commits realizados
+
+
+2) Stage y Logs
+
+    a) Para modificar solamente un archivo
+        *   git add <nombre_de_archivo>
+        *   git commit -m "Se modifico <nombre_de_archivo>"      //Confirma los archivos
+        -   git add css/*.css       //Agrega todos los archivos con la extencion especificada
+
+
