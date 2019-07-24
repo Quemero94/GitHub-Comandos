@@ -29,5 +29,9 @@ Descarga: https://git-scm.com/
         *   git add <nombre_de_archivo>
         *   git commit -m "Se modifico <nombre_de_archivo>"      //Confirma los archivos
         -   git add css/*.css       //Agrega todos los archivos con la extencion especificada
+        -   git reset <nombre_de_archivo>       //Sacar del estado stage un archivo
+        -   git add -A          //Agrega todos los archivos en Stage
+        -   git add --all       //Agrega todos los archivos en Stage
+        -   git help <nombre_de_comando>        //Te da explicacion de los comandos
 
 
