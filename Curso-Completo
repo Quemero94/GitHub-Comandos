@@ -20,7 +20,7 @@ Descarga: https://git-scm.com/
         *   git commit -m "Comentario"      //Confirma los archivos
         -   git diff        //Ver diferencias si cambiaste un archivo
         -   git checkout .      //Regresa al ultimo commit
-        -   git log         //muestra toda la lista de commits realizados
+        -   git log         //muestra toda la lista de commits 4
 
 
 2) Stage y Logs
@@ -33,5 +33,43 @@ Descarga: https://git-scm.com/
         -   git add -A          //Agrega todos los archivos en Stage
         -   git add --all       //Agrega todos los archivos en Stage
         -   git help <nombre_de_comando>        //Te da explicacion de los comandos
+
+
+3) Alias
+
+    a) Cambiar nombres de comandos ejemplo "satatus" x "s"
+        -   git config --global alias.l "log"
+
+
+4) MV/RM/Reset
+
+    a) Modificar comentario de commit mal escrito
+        -   git commit --amend -m "Nueva modificacion"
+    
+    b) Cambiar nombre de archivo commiteado
+        -   git mv archivo.html archi.html
+        -   git commit -m "Se cambio de nombre archivo.html a archi.html"
+    
+    c) Remover archivo
+        -   git rm arhi.html
+        -   git commit -m "Se borro archi.html"
+    
+    d) Recuperar archivo borrado
+        -   git reset --soft c4b6999ca349b0d08a3e5d414f8ab5ba716f36c4       // No recupera elemento, simplemente se posiciona en un commit
+        -   git reset --hard c4b6999ca349b0d08a3e5d414f8ab5ba716f36c4       // Una vez parados en un commit, podemos recuperar el arhivo con este comando
+        -   git reflog      //Muestra todas las acciones tomadas
+        -   git reset --mixed c4b6999ca349b0d08a3e5d414f8ab5ba716f36c4      //Vuelve a un commit anterior y borra todos los que fueron posteriores pero no modifica los archivos
+
+
+5) gitignored
+
+        a) Ignorar archivos
+            - Crear el archivo .gitignore       // Es un archivo reservado de git que tenemos que crear si queremos decirle a git los archivos que no vamos a utilizar y así decida ignorarlos.
+                                                   Escribe dentro de el archivo .gitignore los nombres de los archivos que desees ignorar.
+                                                   Nota: Las carpetas se escriben solas y los archivos con su terminación.
+                                                   Capetas(/Folder/)
+
+
+6)
 
 
