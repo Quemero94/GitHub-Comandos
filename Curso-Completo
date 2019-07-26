@@ -61,7 +61,7 @@ Descarga: https://git-scm.com/
         -   git reset --mixed c4b6999ca349b0d08a3e5d414f8ab5ba716f36c4      //Vuelve a un commit anterior y borra todos los que fueron posteriores pero no modifica los archivos
 
 
-5) gitignored
+5) Gitignored
 
         a) Ignorar archivos
             - Crear el archivo .gitignore       // Es un archivo reservado de git que tenemos que crear si queremos decirle a git los archivos que no vamos a utilizar y así decida ignorarlos.
@@ -70,6 +70,60 @@ Descarga: https://git-scm.com/
                                                    Capetas(/Folder/)
 
 
-6)
+6) Ramas y Uniones (Merge). Esto sirve siempre y cuando no interfiera el contenido de la rama con el master (FastFoward)
+
+    a) Crear nueva rama
+        *   git branch nueva_rama       //Crea nueva rama
+        -   git log --oneline --decorate --all --graph      //Muestra historial de todas las acciones realizadas
+        *   git cheackout nueva_rama        //Cambiar de rama
+
+    b)Unir dos ramas (Merge)
+        *   Posicionarse en rama master
+        *   git merge nueva_merge
+        *   git branch -d nueva_rama        //Elimina la rama inidicada
+        -   git checkout -b nueva_rama2     //Crea una rama y te dirije automaticamente
 
 
+7) Merge (solucionar errores). 
+
+    a) Si se modifica el codigo dentro de un archivo de la nueva rama  cuando se realize un merge con la rama master escribira codigo que no corresponde, se debe borrar lo que esta demas
+        y se solucionara el problema.
+
+
+8) Etiquetas (tags)
+
+    a) Etiquetar versiones de un software
+        *   git tag version_de_prueba  
+        *   git tag -d version_de_prueba        //Elimina la etiqueta
+        -   git tag -a v1.0.0
+        -   git tag -a v1.0.0 -m "Version incial"       //Versiones
+
+
+9) Git Clone
+
+    a) Subir a repositorio
+        - git remote rm origin  
+        - git remote rm upstream
+        * git remote add origin https://github.com/Quemero94/GitHub-Comandos.git
+        * git push -u origin master
+
+
+    b) Clonar un repositorio desde GitHub
+        * git clone https://github.com/Quemero94/GitHub-Comandos.git
+        - git push origin master
+
+10) Git pull
+
+    a) Si se crea un archivo desde github con estos comandos se pueden actualizar y agregarse en el repo local 
+        - git pull      //descarga 
+
+
+11) Forks
+
+    a) En la pagina de github entrar al repo que se quiere copiar y Presionar boton "FORK" y se creara una copia en mi pagina de github
+        * git clone https://github.com/Quemero94/GitHub-Comandos.git        //para tener una copia local
+
+
+12) Pull request
+
+    a) 
